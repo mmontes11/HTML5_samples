@@ -1,0 +1,35 @@
+.container {
+	text-align: center;
+}
+
+.left {
+	position: relative;
+	float: left;
+	text-align: center;
+	padding: 2% 10% 2% 10%;
+	width: 50%;
+}
+
+.right {
+	position: relative;
+	float: left;
+	text-align: center;
+	padding: 2% 10% 2% 10%;
+	width: 50%;
+}
+
+.firstExample{
+	margin-top: 4%;
+}
+
+.video {
+	width: 500px;
+	height: 250p
+}
+
+.canvas {
+	width: 500px;
+	height: 250px;
+	border:1px solid #000000;
+}
+
