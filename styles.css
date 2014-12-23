@@ -1,0 +1,20 @@
+.container {
+	text-align: center;
+}
+
+.left {
+	position: relative;
+	float: left;
+	text-align: center;
+	padding: 2% 2% 2% 2%;
+	width: 50%;
+}
+
+.right {
+	position: relative;
+	float: left;
+	text-align: center;
+	padding: 2% 2% 2% 2%;
+	width: 50%;
+}
+
