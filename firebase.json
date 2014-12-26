@@ -1,0 +1,9 @@
+{
+  "firebase": "html5-examples",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
