@@ -20,12 +20,12 @@
 }
 
 .firstExample{
-	margin-top: 4%;
+	margin-top: 7%;
 }
 
 .video {
 	width: 500px;
-	height: 250p
+	height: 250px;
 }
 
 .canvas {
@@ -34,3 +34,27 @@
 	border:1px solid #000000;
 }
 
+.rotate {
+	transform: rotate(7deg) ;
+	-webkit-transform: rotate(7deg) ;
+	-moz-transform: rotate(7deg) ;
+	-o-transform: rotate(7deg) ;
+	-ms-transform: rotate(7deg) ;
+}
+
+.boxshadow {
+	-moz-box-shadow:10px 10px 5px #000000;
+	-webkit-box-shadow:10px 10px 5px #000000;
+	box-shadow:10px 10px 5px #000000;
+}
+
+.outline {
+	outline-style:dashed;
+	outline-width:5px;
+	outline-color: #000000;
+	outline-offset: 5px;
+}
+
+.gradient {
+	background:-webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#860000), to(#FFFFFF))
+}

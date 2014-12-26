@@ -13,15 +13,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>
+				<a class="navbar-brand" href="http://en.wikipedia.org/wiki/HTML5">
+					<img src="img/HTML5_Logo.png"
+				</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="http://www.html5rocks.com/es/features/offline">Offline</a>
+						<a href="http://www.html5rocks.com/es/tutorials/?page=1">HTML5 Rocks</a>
 					</li>
 					<li>
-						<a href="https://developer.mozilla.org/es/docs/HTML/HTML5">Example</a>
+						<a href="https://developer.mozilla.org/es/docs/HTML/HTML5">MDN</a>
+					</li>
+					<li>
+						<a href="http://www.w3schools.com/html/html5_intro.asp">Tutorial w3schools</a>
 					</li>
 				</ul>
 			</div>
@@ -46,6 +51,15 @@
 		</section>
 		<section>
 			<div class="container well">
+				<h3>Canvas</h3>
+				<canvas id="canvas" class="canvas">
+				</canvas>
+				<canvas id="canvas2" class="canvas">
+				</canvas>
+			</div>
+		</section>
+		<section>
+			<div class="container well">
 				<h3>Audio</h3>
 				<audio controls>
 					<source src="audio/entertainer.mp3" type="audio/mp3">
@@ -64,11 +78,15 @@
 		</section>
 		<section>
 			<div class="container well">
-				<h3>Canvas</h3>
-				<canvas id="canvas" class="canvas">
-				</canvas>
-				<canvas id="canvas2" class="canvas">
-				</canvas>
+				<h3>Canvas Video</h3>
+				<h4>Click on the video!!!</h4>
+				<div style="display:none">
+					<canvas id="sourcecopy" width="640" height="360"></canvas>
+				</div>
+				<div>
+					<canvas id="output" width="1000" height="600" onmousedown="dropBomb(event, this)">
+					</canvas>
+				</div>
 			</div>
 		</section>
 		<section>
@@ -102,16 +120,44 @@
 					<strong>Date Value: </strong><label id="dateValue"></label>
 				</form>
 			</div>
-		</section>		
+		</section>
+		<br/>
+		<br/>		
+		<br/>
 		<section>
-			<div class="container well">
-				<div style="display:none">
-					<canvas id="sourcecopy" width="640" height="360"></canvas>
-				</div>
-				<div>
-					<canvas id="output" width="1000" height="600" onmousedown="dropBomb(event, this)" style="border: solid 5px #666666">
-					</canvas>
-				</div>
+			<div class="container well rotate">
+				<h3>CSS3 Rotate</h3>
+			</div>
+		</section>
+		<br/>
+		<br/>		
+		<br/>
+		<section>
+			<div class="container well boxshadow">
+				<h3>CSS3 Box Shadow</h3>
+			</div>
+		</section>
+		<br/>
+		<section>
+			<div class="container well outline">
+				<h3>CSS3 Outline</h3>
+			</div>
+		</section>
+		<section>
+			<div class="container well gradient">
+				<h3>CSS3 Gradient</h3>
+			</div>
+		</section>
+		<section>
+			<div onclick="rotate2D()" id="rotate2D"  class="container well">
+				<h3>CSS3  2D rotate</h3>
+				<h4>Click me!!!</h4>
+			</div>
+		</section>
+		<section>
+			<div onclick="rotate3D()" id="rotate3D"  class="container well"> 
+				<h3>CSS3 3D rotate</h3>
+				<h4>Click me!!!</h4>
 			</div>
 		</section>
 	</article>
@@ -122,7 +168,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<body onload="init()" style="margin:0px;">
-		
+	<body onload="init()">		
 	</body>
 </html>
