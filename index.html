@@ -35,6 +35,38 @@
 	<article>
 		<section>
 			<div class="container firstExample well">
+				<h3>Forms</h3>
+				<div class="left">
+					<input class="form-control" id="email" type="email" placeholder="user@email.com">
+					<input class="form-control" id="password" type="password" placeholder="Password">
+					<input class="form-control" id="file" type="file" placeholder="File">
+					<input class="form-control" id="number" type="number" min="0" max="10" step="1" value="1">
+					<input class="form-control" id="number2" type="range" min="0" max="100" step="10" value="1">
+					<input class="form-control" id="color" type="color">
+					<input id="date" type="date">
+					<br/>
+					<button class="btn btn-primary" onclick="submitHTML5form()">Submit</button>
+				</div>
+				<div class="right">
+				<form validate>
+					<strong>Email Value: </strong><label id="emailValue"></label>
+					<br/>
+					<strong>Password Value: </strong><label id="passwordValue"></label>
+					<br/>
+					<strong>File Value: </strong><label id="fileValue"></label>
+					<br/>
+					<strong>Number Value: </strong><label id="numberValue"></label>
+					<br/>
+					<strong>Number Range Value: </strong><label id="numberValue2"></label>
+					<br/>
+					<strong>Color Value: </strong><label id="colorValue"></label>
+					<br/>
+					<strong>Date Value: </strong><label id="dateValue"></label>
+				</form>
+			</div>
+		</section>
+		<section>
+			<div class="container well">
 				<h3>Web SQL Database (Browser Database):</h3>
 				<div class="left">
 					<input type="text" id="todoText" class="form-control" placeholder="New Todo" autofocus>
@@ -46,6 +78,23 @@
 				<div class="right">
 					<ul id="todos">
 					</ul>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container well">
+				<h3>LocalStorage and SessionStorage</h3>
+				<div class="left">
+					<input type="text" id="localStorage" class="form-control" placeholder="New Local Storage Value">
+					<input type="text" id="sessionStorage" class="form-control" placeholder="New Session Storage Value">
+					<button onclick="saveLocalSessionStorage()" class="btn btn-primary">
+						Set Values
+					</button>
+				</div>
+				<div class="right">
+					<strong>Local Storage: </strong><label id="localStorageValue"></label>
+					<br/>
+					<strong>Session Storage: </strong><label id="sessionStorageValue"></label>
 				</div>
 			</div>
 		</section>
@@ -87,38 +136,6 @@
 					<canvas id="output" width="1000" height="600" onmousedown="dropBomb(event, this)">
 					</canvas>
 				</div>
-			</div>
-		</section>
-		<section>
-			<div class="container well">
-				<h3>Forms</h3>
-				<div class="left">
-					<input class="form-control" id="email" type="email" placeholder="user@email.com">
-					<input class="form-control" id="password" type="password" placeholder="Password">
-					<input class="form-control" id="file" type="file" placeholder="File">
-					<input class="form-control" id="number" type="number" min="0" max="10" step="1" value="1">
-					<input class="form-control" id="number2" type="range" min="0" max="100" step="10" value="1">
-					<input class="form-control" id="color" type="color">
-					<input id="date" type="date">
-					<br/>
-					<button class="btn btn-primary" onclick="submitHTML5form()">Submit</button>
-				</div>
-				<div class="right">
-				<form validate>
-					<strong>Email Value: </strong><label id="emailValue"></label>
-					<br/>
-					<strong>Password Value: </strong><label id="passwordValue"></label>
-					<br/>
-					<strong>File Value: </strong><label id="fileValue"></label>
-					<br/>
-					<strong>Number Value: </strong><label id="numberValue"></label>
-					<br/>
-					<strong>Number Range Value: </strong><label id="numberValue2"></label>
-					<br/>
-					<strong>Color Value: </strong><label id="colorValue"></label>
-					<br/>
-					<strong>Date Value: </strong><label id="dateValue"></label>
-				</form>
 			</div>
 		</section>
 		<br/>

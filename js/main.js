@@ -71,6 +71,28 @@ var addTodo = function(){
 	loadTodos();
 };
 
+//LOCAL AND SESSION STORAGE
+var localStorage = window['localStorage'];
+var sessionStorage = window['sessionStorage'];
+
+var saveLocalSessionStorage = function(){
+	clearLocalSessionStorage();
+	localStorage.setItem('local',$("#localStorage").val());
+	sessionStorage.setItem('session',$("#sessionStorage").val());
+	refreshLocalSessionStorage();
+}
+
+var clearLocalSessionStorage = function(){
+	sessionStorage.clear();
+  	localStorage.clear();
+  	refreshLocalSessionStorage();
+}
+
+var refreshLocalSessionStorage = function(){
+	$("#localStorageValue").text(localStorage.getItem('local'));
+	$("#sessionStorageValue").text(sessionStorage.getItem('session'));
+}
+
 //DRAW CANVAS
 
 var canvasDrawLine = function(){
@@ -382,6 +404,7 @@ $( document ).ready(function() {
 	console.log("Document ready");
 	initDB();
 	loadTodos();
+	refreshLocalSessionStorage();
 	canvasDrawLine();
 	canvasDawCircle();
 	canvasDrawGradient();
