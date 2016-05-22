@@ -1,4 +1,4 @@
-HTML5_examples
+HTML5_samples
 ==============
 
 A few examples of new HTML5 features.
@@ -6,4 +6,4 @@ A few examples of new HTML5 features.
 Demo
 ====
 
-[Online Demo HTML5_examples](https://html5-examples.firebaseapp.com/)
+[Online Demo HTML5_samples](https://html5-examples.firebaseapp.com/)
